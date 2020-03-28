@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="final_project_balance.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="top_container">
+        <div id="date_container">
+            <p id="p_date_month"></p>
+            <p id="p_date_year"></p>
+        </div>
+        <div id="balance_div">
+            <p id="p_balance">0.00</p>
+        </div>
+        <div id="total_income_div">
+            <h3 class="income_hed_line">INCOME</h3>
+            <div id="income_sum_div">
+                <div id="div_p_sum_income">
+                    <p id="p_sum_income">+0.00</p>
+                </div>
+            </div>
+        </div>
+        <div id="total_expense_div">
+            <h3 class="income_hed_line">EXPENSES</h3>
+            <div id="div_p_sum_expenses">
+                <p id="p_sum_expenses">-0.00
+                    <div id="exp_persenteg">...</div>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="middle_select_input_container">
+        <select onclick="color_change_with_selector()" id="select_option">
+            <option value="plus">+</option>
+            <option value="minus">-</option>
+        </select>
+        <input id="inupt_description" type="text" placeholder="enter discription"><input id="input_value" type="number"
+            placeholder="enter value">
+        <span id="button_display"><a href="#home"><i id="selecticon" class="far fa-check-circle"
+                    onclick="clickButton_to_add_discription()"></i></a></span>
+    </div>
+    <div id="income_container">
+        <ul id="income_description_value">
+            <h1 id="income_h1_ul">INCOME</h1>
+        </ul>
+    </div>
+    <div id="expenses_container">
+        <ul id="expenses_description_value">
+            <h1 id="expenses_h1_ul">EXPENSES</h1>
+        </ul>
+    </div>
+
+    <script src="final_project_balance.js"></script>
+</body>
+
+</html>
